@@ -20,7 +20,7 @@ function movePreviousImg() {
 
 }
   
-  imgElem.src = `/images/${imageSources[count]}.jpg`
+  imgElem.src = `./images/${imageSources[count]}.jpg`
   attributionElem.innerHTML = `${sceneName[count]} - ${authors[count]}`
 }
 
@@ -29,7 +29,7 @@ function moveNextImg() {
 
   if (count === imageSources.length) {count = 0}
 
-  imgElem.src = `/images/${imageSources[count]}.jpg`
+  imgElem.src = `./images/${imageSources[count]}.jpg`
   attributionElem.innerHTML = `${sceneName[count]} - ${authors[count]}`
 }
 
